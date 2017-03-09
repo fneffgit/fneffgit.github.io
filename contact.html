@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Home</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      @keyframes fade_in {
+        from {opacity: 0.0;}
+        to {opacity: 1.0;}
+      }
+      body {
+        font-family: "Palatino Linotype";
+      }
+      .test {
+        cursor: pointer;
+      }
+      .padme {
+        padding: 40px;
+      }
+      .my_paper {
+        /*background-color: #eeeeee;*/
+        margin-top: 64px;
+        margin-bottom: 128px;
+        max-width: 700px;
+      }
+      .centerme {
+        text-align: center;
+        margin: auto;
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+      .ohnocolor {
+        color: gray;
+      }
+      .shadow {
+        /*moz-box-shadow: 0px 0px 6px 6px #eee;*/
+        /*webkit-box-shadow: 0px 0px 6px 6px #eee;*/
+        /*box-shadow: 0px 0px 6px 6px #eee;*/
+      }
+      .ifade {
+        animation-name: fade_in;
+        animation-duration: 4s;
+      }
+      ::-moz-selection { /* Code for Firefox */
+        color: red;
+        background: rgba(255, 255, 255, 0);
+      }
+      ::selection {
+        color: red; 
+        background: rgba(255, 255, 255, 0);
+      }
+	  p {
+		text-align: center;
+	  }
+    </style>
+  </head>
+
+  <body class="test">
+
+    <!--The Head-->
+    <div class="container-fluid">
+      <div class="row">
+
+      <!-- 1 -->
+      <div class="col-sm-3">
+        <h1 class="centerme"><img src="logo.png" /></h1>
+      </div>
+      <!-- 2 -->
+      <div class="col-lg-6">
+      </div>
+      <!-- 12 -->
+      <div class="col-lg-3">
+      <ul class="nav navbar-nav centerme">
+         <!-- Standard button -->
+        <a href="index.html"><button type="button" class="btn btn-default">Home</button></a>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a href="resume.html"><button type="button" class="btn btn-default">Resume</button></a>
+        <!-- Indicates a successful or positive action -->
+        <a href="reference.html"><button type="button" class="btn btn-default">Reference</button></a>
+        <!-- Indicates caution should be taken with this action -->
+        <a href="contact.html"><button type="button" class="btn btn-danger">Contact</button></a>
+      </ul>
+      </div>
+    </div>
+
+    <!--<h1 class="centerme"><img class="ifade" src="home.png" /></h1>-->
+
+    <!--The Content-->
+    <div class="container my_paper shadow ifade">
+		<div class="row">
+			 <div class="col-lg-12 padme">
+				<h2 class="centerme">Email me</h2>
+				<p>fintanneff@gmail.com</p>
+				<p>fneff@bppwd.com</p>
+			 </div>
+		</div>
+	</div>
+
+    <!--Code stuff-->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
